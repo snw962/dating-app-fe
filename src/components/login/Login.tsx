@@ -16,26 +16,27 @@ import { ActionType } from '../redux/action-types';
 function App() {
   let dispatch = useDispatch();
   const navigate = useNavigate();
-  let [userName, setUserName] = useState("");
+  let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
   async function onButtonClick() {
+    
     try {
-      const response = await axios.post("http://localhost:8080/users/login", { userName, password });
-      //  console.log(response)
-
+      const response = await axios.post("http://localhost:8080/users/login", { email, password });
+        console.log(response)
+      
       let token = response.data;
       let decodedToken : any = jwt_decode(token)
       let strSuccessfullLoginResponse: string = decodedToken.sub
       let successfullLoginResponse: ISuccessfulLoginData = JSON.parse(strSuccessfullLoginResponse)
       console.log(" Decoded: ", successfullLoginResponse)
       axios.defaults.headers.common['Authorization'] = "Bearer " + token;
-      let userState = successfullLoginResponse.userType;
+      let userState = successfullLoginResponse.type;
       dispatch({type: ActionType.SaveUserType, payload: userState})
 
-      if (successfullLoginResponse.userType === 'ADMIN') {
-        navigate('/admin');
+      if (successfullLoginResponse.type === 'CLIENT') {
+        navigate('/client');
       }
-      if (successfullLoginResponse.userType === 'CUSTOMER') {
+      if (successfullLoginResponse.type === 'CUSTOMER') {
         navigate('/customer');
       }
      
@@ -64,7 +65,7 @@ function App() {
             <h1>Login page</h1>
             <div>
               <img src={email} alt="email" className="email" />
-              <input type="text" className="name" placeholder='User Name' onChange={event => setUserName(event.target.value)} /><br />
+              <input type="text" className="name" placeholder='User Name' onChange={event => setEmail(event.target.value)} /><br />
             </div>
             <div className="second-input">
               <img src={lock} alt="lock" className="email" />
