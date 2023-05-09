@@ -5,12 +5,15 @@ import "./layout.css";
 import Login from "../login/Login";
 import Main from "./Main/Main";
 import Client from "./client/Client";
+import Register from "../register/Register";
 
 function Layout() {
   return (
     <section className="layout">
-      <Login />
+
       <Routes>
+      <Route path="/" element={<Login/>}/> 
+      <Route path="/register" element={<Register/>}/> 
         <Route path="/client" element={<Client/>}/> 
       </Routes>
     </section>

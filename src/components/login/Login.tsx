@@ -18,6 +18,9 @@ function App() {
   const navigate = useNavigate();
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
+  function onSignUpClick(){
+    navigate("/register")
+  }
   async function onButtonClick() {
     
     try {
@@ -76,7 +79,8 @@ function App() {
             </div>
 
             <p className="link">
-              <a href="#"> Forgot Password?</a> or <a href="#"> Sign up</a>
+              <a href="re"> Forgot Password?</a> or<input type="button" className="sign" value="sign up" onClick={onSignUpClick} /><br />
+
             </p>
 
           </div>
