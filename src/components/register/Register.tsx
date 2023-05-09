@@ -2,16 +2,22 @@ import axios from "axios";
 import { useState } from "react";
 import './register.css';
 import personplus from "../images/personplus.png"
+import { useNavigate } from "react-router-dom";
 
 
 function App() {
 
+  const navigate = useNavigate();
     let [email, setEmail] = useState("");
     let [password, setPassword] = useState("");
     let [name, setName] = useState("");
     let [description, setDescription] = useState("");
     let type  ="CLIENT";
     //let company = null;
+
+    function onBackToLogin(){
+      navigate("/")
+    }
   
   
     async function register() {
@@ -42,6 +48,7 @@ function App() {
         <input className='input-reg'type="text" placeholder="Name" onChange={event => setName(event.target.value)} /><br />
         <input className='input-reg'type="text" placeholder="Description" onChange={event => setDescription(event.target.value)} /><br />
         <input className='button-reg'type="button" value="Submit" onClick={register} />
+        <input className="already-member" type="button" value="Already have an account?" onClick={onBackToLogin}/>
         </div>
         </div>
       </div>

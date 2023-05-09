@@ -14,7 +14,7 @@ function Layout() {
       <Routes>
       <Route path="/" element={<Login/>}/> 
       <Route path="/register" element={<Register/>}/> 
-        <Route path="/client" element={<Client/>}/> 
+      <Route path="/client" element={<Client/>}/> 
       </Routes>
     </section>
   );

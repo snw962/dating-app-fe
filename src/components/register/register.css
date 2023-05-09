@@ -36,7 +36,7 @@
     width: 380px;
     height: 50px;
     border-radius: 60px;
-    background-color: #b103fc;
+    background-color: #9d1313;
     color: white;
     font-size: 25px;
     border: none;
@@ -49,7 +49,7 @@
   }
   
   .container-image-reg{
-    background-color: #b103fc;
+    background-color: #9d1313;
     border-radius: 80px;
     align-items: center;
     display: flex;
@@ -68,4 +68,16 @@
 
   .all-inputs{
     margin-top: 60px;
+  }
+
+  .already-member{
+    cursor: pointer;
+    width: 250px;
+    height: 50px;   
+    border-radius: 50px;
+    font-size:medium;
+    margin: 20px;
+    background-color: #964141;
+    
+    
   }
