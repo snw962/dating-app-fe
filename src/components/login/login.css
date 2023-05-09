@@ -1,5 +1,5 @@
 body {
- background-image: url('D:\ClassFullTask\DatingServerUIUX\dating-app-fe\src\components\images\love.png');
+ background-image: url('../images/love.png');
   background-size: cover;
   background-position: center;
 }

@@ -1,14 +1,12 @@
 .layout { 
     height: 100%;
-    border: 2px solid black;
+  
     text-align: center;
     box-sizing: border-box;
     display: grid;
   }
   
-  .layout> * {
-    border: 2px solid black;
-  }
+ 
   
   .layout>header, footer {
     grid-column: span 12;
