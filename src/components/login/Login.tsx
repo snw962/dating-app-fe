@@ -53,6 +53,10 @@ function App() {
     }
   }
 
+  function onForgotPasswordClick(){
+    navigate("/forgotPassword");
+  }
+
   return (
     <div className="main">
       <div className="sub-main">
@@ -71,13 +75,13 @@ function App() {
             <div className="second-input">
               <img src={lock} alt="lock" className="email" />
               <input type="password" className="name" placeholder='Password' onChange={event => setPassword(event.target.value)} /><br />
-            </div>
-            <div className="login-button">
-              <input type="button" className="button" value="Login <3" onClick={onButtonClick} /><br />
-            </div>
+            </div><br/>
+            
+              <input type="button" className="login-button" value="Login <3" onClick={onButtonClick} /><br />
+            
 
             <p className="link">
-            <input type="button" className="forgotPassword" value="Forgot password" /> or<input type="button" className="signUp" value="sign up" onClick={onSignUpClick} /><br />
+            <input type="button" className="forgotPassword" value="Forgot password" onClick={onForgotPasswordClick} /> or<input type="button" className="signUp" value="sign up" onClick={onSignUpClick} /><br />
 
             </p>
 

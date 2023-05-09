@@ -52,6 +52,8 @@ body {
     border:none;
     outline: none;
     background-color: #fff;
+    caret-color: #9d1313;
+    
     
   }
   
@@ -85,7 +87,22 @@ body {
   }
   
   .login-button{
-    padding-top: 25px;
+   
+    width: 380px;
+    height: 50px;
+    border-radius: 60px;
+    background-color: #9d1313;
+    color: white;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+    transition: .3s all ease;
+  }
+  .login-button:hover{
+    background-color: #7f0e0e;
+    flex: 2;
+    scale: 1.1;
   }
   
   .link{
@@ -100,8 +117,14 @@ body {
     font-size:medium;
     margin: 20px;
     background-color: #964141;
-    
-    
+    flex: 1;
+    transition: .3s all ease;
+   }
+
+   .forgotPassword:hover{
+    background-color: #9d1313;
+    flex: 2;
+    scale: 1.1;
    }
 
    .signUp{
@@ -111,9 +134,14 @@ body {
     border-radius: 50px;
     font-size:medium;
     margin: 20px;
-    background-color: #964141;
+    background-color: #964141; 
+    flex:1;
+    transition: .3s all ease;
     
-    
-    
+   }
 
+   .signUp:hover{
+    flex:2;
+    background-color: #9d1313;
+    scale: 1.1;
    }

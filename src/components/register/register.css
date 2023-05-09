@@ -32,15 +32,7 @@
     
   }
 
-  .button-reg{
-    width: 380px;
-    height: 50px;
-    border-radius: 60px;
-    background-color: #9d1313;
-    color: white;
-    font-size: 25px;
-    border: none;
-  }
+
 
   .imgs-reg{
     padding-top: 0px;
@@ -79,5 +71,31 @@
     margin: 20px;
     background-color: #964141;
     
-    
+    flex: 1;
+    transition: .3s all ease;
+
+  }
+
+  .already-member:hover{
+    flex: 2;
+    scale: 1.1;
+    background-color: #7f0e0e;
+  }
+  .sumbit{
+   
+    width: 380px;
+    height: 50px;
+    border-radius: 60px;
+    background-color: #9d1313;
+    color: white;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+    transition: .3s all ease;
+  }
+  .sumbit:hover{
+    background-color: #7f0e0e;
+    flex: 2;
+    scale: 1.1;
   }

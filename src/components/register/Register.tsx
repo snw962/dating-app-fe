@@ -47,7 +47,7 @@ function App() {
         <input className='input-reg'type="password" placeholder="Password" onChange={event => setPassword(event.target.value)} /><br />
         <input className='input-reg'type="text" placeholder="Name" onChange={event => setName(event.target.value)} /><br />
         <input className='input-reg'type="text" placeholder="Description" onChange={event => setDescription(event.target.value)} /><br />
-        <input className='button-reg'type="button" value="Submit" onClick={register} /><br/>
+        <input className='sumbit'type="button" value="Submit" onClick={register} /><br/>
         <input className="already-member" type="button" value="Already have an account?" onClick={onBackToLogin}/>
         </div>
         </div>
