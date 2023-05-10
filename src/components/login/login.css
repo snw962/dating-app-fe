@@ -8,23 +8,26 @@ body {
     justify-content: center;
     display: flex;
     padding: 90px 0 90px 0;
+    
   }
   
   .sub-main{
     display: flex;
     justify-content: center;
-    height: 550px;
-    width: 35%;
-    box-shadow: 11px 12px 13px 12px rgb(207, 207, 207);
+    height:100%;
+    width: 40%;
+    box-shadow: 11px 12px 13px  rgb(245, 215, 215);
     padding-top: 30px;
     border-radius:  60px;
-    background-color: white;
+    background-color: rgba(232, 190, 190, 0.827);
+   
   } 
   
   .imgs{
     padding-top: 20px;
     justify-content: center;
     display: flex;
+  
   }
   
   .container-image{
@@ -34,7 +37,7 @@ body {
     display: inline;
     display: flex;
     height: 115px;
-    width: 115px;
+    width: 29%;
   }
  
   .profile{
@@ -45,17 +48,18 @@ body {
   }
   
   input{
-    width: 300px;
+    width:70%;
     height: 50px;
     border-radius: 60px;
     box-shadow: inset 0px 0px 25px 0px #888;
     border:none;
     outline: none;
-    background-color: #fff;
-    caret-color: #9d1313;
-    
+    background-color: hsla(0, 0%, 100%, 0.164);
+    caret-color: #9d1313; 
+    cursor: pointer;  
     
   }
+  
   
   .email{
     height: 25px;
@@ -66,9 +70,15 @@ body {
   }
   
   .name{
-    padding-left: 70px ;
-    font-size: 20px;
-    
+    padding-left:20% ;
+    font-size: 110%;
+    width: 70%;
+    flex:1;
+    transition: .3s all ease;    
+  }
+  .name:hover{
+    flex :2;
+    background-color: hsla(0, 0%, 100%, 0.774);
   }
   
   .second-input{
@@ -102,7 +112,7 @@ body {
   .login-button:hover{
     background-color: #7f0e0e;
     flex: 2;
-    scale: 1.1;
+    scale: 1.03;
   }
   
   .link{
@@ -124,7 +134,7 @@ body {
    .forgotPassword:hover{
     background-color: #9d1313;
     flex: 2;
-    scale: 1.1;
+    scale: 1.03;
    }
 
    .signUp{
@@ -143,5 +153,5 @@ body {
    .signUp:hover{
     flex:2;
     background-color: #9d1313;
-    scale: 1.1;
+    scale: 1.03;
    }

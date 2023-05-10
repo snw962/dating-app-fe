@@ -10,12 +10,12 @@
   .sub-main-reg{
     display: flex;
     justify-content: center;
-    height: 700px;
-    width: 35%;
-    box-shadow: 11px 12px 13px 12px rgb(207, 207, 207);
-    padding-top: 40px;
+    height:100%;
+    width: 40%;
+    box-shadow: 11px 12px 13px  rgb(245, 215, 215);
+    padding-top: 30px;
     border-radius:  60px;
-    background-color: white;
+    background-color: rgba(232, 190, 190, 0.827);
   } 
 
   .input-reg{
@@ -25,14 +25,18 @@
     box-shadow: inset 0px 0px 25px 0px #888;
     border:none;
     outline: none;
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsla(0, 0%, 100%, 0.164);
     margin-bottom: 20px;
     text-align: center;
     font-size: medium;
-    
+    flex:1;
+    transition: .3s all ease;
+    cursor:pointer;    
   }
-
-
+  .input-reg:hover{
+    flex :2;
+    background-color: hsla(0, 0%, 100%, 0.774);
+  }
 
   .imgs-reg{
     padding-top: 0px;
@@ -78,7 +82,7 @@
 
   .already-member:hover{
     flex: 2;
-    scale: 1.1;
+    scale: 1.03;
     background-color: #7f0e0e;
   }
   .sumbit{
@@ -97,5 +101,5 @@
   .sumbit:hover{
     background-color: #7f0e0e;
     flex: 2;
-    scale: 1.1;
+    scale: 1.03;
   }

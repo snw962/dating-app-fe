@@ -29,10 +29,10 @@ function ForgotPassword(){
           </div>
           <div>
             <h1>Password Reset </h1><br/>
-            <h3>Enter an email to send the password reset </h3>
+            <h3>Enter an email to send the password reset: </h3>
             <div>
               <img src={emailp} alt="emailp" className="email" />
-              <input type="text" className="name" placeholder='Enter mail ' onChange={event => setEmail(event.target.value)} /><br /><br /><br />
+              <input type="text" className="name" placeholder='user@email.com ' onChange={event => setEmail(event.target.value)} /><br /><br /><br />
             </div>
             <input type="button" className="password-reset" value="Reset Password" onClick={onResetPasswordClick} />
             

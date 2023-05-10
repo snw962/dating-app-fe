@@ -48,7 +48,7 @@ function App() {
       if (e.response?.data?.error?.message) {
         alert(e.response.data.error.message)
       } else {
-        alert("Login invalid, try later")
+        alert("User name or password is invalid, please try again")
       }
     }
   }
@@ -70,18 +70,18 @@ function App() {
             <h1>Login page</h1>
             <div>
               <img src={emailp} alt="emailp" className="email" />
-              <input type="text" className="name" placeholder='User Name' onChange={event => setEmail(event.target.value)} /><br />
+              <input type="text" className="name" placeholder='user@email.com' onChange={event => setEmail(event.target.value)} /><br />
             </div>
             <div className="second-input">
               <img src={lock} alt="lock" className="email" />
-              <input type="password" className="name" placeholder='Password' onChange={event => setPassword(event.target.value)} /><br />
+              <input type="password" className="name" placeholder='********' onChange={event => setPassword(event.target.value)} /><br />
             </div><br/>
             
               <input type="button" className="login-button" value="Login <3" onClick={onButtonClick} /><br />
             
 
             <p className="link">
-            <input type="button" className="forgotPassword" value="Forgot password" onClick={onForgotPasswordClick} /> or<input type="button" className="signUp" value="sign up" onClick={onSignUpClick} /><br />
+            <input type="button" className="forgotPassword" value="Forgot password" onClick={onForgotPasswordClick} /> <input type="button" className="signUp" value="sign up" onClick={onSignUpClick} /><br />
 
             </p>
 
